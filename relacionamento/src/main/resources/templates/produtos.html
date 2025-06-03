@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>CategoriasProdutos</title></head>
+<body>
+<h2>Lista de Produtos</h2>
+<a href="/web/produtos/novo">Novo Produto</a>
+<table border="1">
+    <tr><th>Nome</th><th>Categoria</th></tr>
+    <tr th:each="p : ${produtos}">
+        <td th:text="${p.nome}"></td>
+       <td th:text="${p.categoria != null ? p.categoria.nome : 'Sem categoria'}"></td>
+    </tr>
+</table>
+</body>
+</html>
