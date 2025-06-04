@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.relacionamento.entity.Categoria;
 import com.relacionamento.service.CategoriaService;
-import org.springframework.web.bind.annotation.GetMapping;
-
-
 
 
 @RestController
@@ -22,8 +19,6 @@ public class CategoriaController {
 
     @Autowired
     private CategoriaService categoriaService;
-    @GetMapping
-     
     public List<Categoria> listar() {
         return categoriaService.listarTodos();
     }
