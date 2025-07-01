@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado do CEP</title>
+</head>
+<body>
+<h1>Resultado</h1>
+
+<div th:if="${endereco != null}">
+    <p><strong>CEP:</strong> <span th:text="${endereco.cep}">00000-000</span></p>
+    <p><strong>Logradouro:</strong> <span th:text="${endereco.logradouro}">Rua</span></p>
+    <p><strong>Bairro:</strong> <span th:text="${endereco.bairro}">Bairro</span></p>
+    <p><strong>Cidade:</strong> <span th:text="${endereco.localidade}">Cidade</span></p>
+    <p><strong>Estado:</strong> <span th:text="${endereco.uf}">UF</span></p>
+</div>
+
+<a href="/cep">Nova busca</a>

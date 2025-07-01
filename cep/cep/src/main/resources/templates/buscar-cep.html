@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Buscar CEP</title>
+</head>
+<body>
+<h1>Consulta CEP (ViaCEP)</h1>
+<form th:action="@{/cep}" method="post">
+    <input type="text" name="cep" placeholder="Digite o CEP" required>
+    <button type="submit">Buscar</button>
+</form>
+</body>
+</html>

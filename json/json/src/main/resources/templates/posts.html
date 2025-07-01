@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Posts</title></head>
+<body>
+<h1>Lista de Posts</h1>
+<ul>
+    <li th:each="p : ${posts}">
+        <a th:href="@{/posts/{id}(id=${p.id})}" th:text="${p.title}">Título</a>
+    </li>
+</ul>
+</body>
+</html>
