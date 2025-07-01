@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "gatewayCerto/gateway"
+		},
+		{
+			"path": "eureka/eureka"
+		},
+		{
+			"path": "primeiro/primeiro"
+		},
+		{
+			"path": "segundo/segundo"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
